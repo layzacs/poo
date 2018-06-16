@@ -27,16 +27,16 @@
 ### 6. Lista de requisitos
 #### 6.1 Funcionais
 
-**RF1.** Permitir que o usuário reserve uma merenda no devido dia solicitado.
-**RF2.** Permitir que o usuário visualize as merendas anteriores reservadas.
-**RF3.** Permitir que o usuário possa cancelar a reserva de merenda até as 21:00 do dia anterior
-**RF4.** Permitir que o usuário possa reservar a merenda até 4 dias antes.
+<br>**RF1.** Permitir que o usuário reserve uma merenda no devido dia solicitado.</br>
+<br>**RF2.** Permitir que o usuário visualize as merendas anteriores reservadas.</br>
+<br>**RF3.** Permitir que o usuário possa cancelar a reserva de merenda até as 21:00 do dia anterior.</br>
+<br>**RF4.** Permitir que o usuário possa reservar a merenda até 4 dias antes.</br>
 
 #### 6.2 Não funcionais
-**RNF1.** O sistema deve possuir uma interface intuitiva.
-**RNF2.** O sistema terá acesso a um banco de dados com as contas cadastradas de cada usuário.
-**RNF3.** O sistema será implementado para celulares com Android.
-**RNF4.** O sistema terá acesso a um banco de dados com os tickets(chaves) que serão convertidas em QRcode.
+<br>**RNF1.** O sistema deve possuir uma interface intuitiva.</br>
+<br>**RNF2.** O sistema terá acesso a um banco de dados com as contas cadastradas de cada usuário.</br>
+<br>**RNF3.** O sistema será implementado para celulares com Android.</br>
+<br>**RNF4.** O sistema terá acesso a um banco de dados com os tickets(chaves) que serão convertidas em QRcode.</br>
 
 ### 7. Regras de negócio
 
@@ -66,6 +66,7 @@ Exceções:
 Foram informados dados cadastrais incorretos (3). Veja caso “Erro ao logar” (CSU02).
 &nbsp;
 **Erro ao logar (CSU02)**
+&nbsp;
 Ator primário: Usuário.
 Ator secundário: Base de dados com as contas de usuário cadastradas.
 Resumo: O usuário erra os dados por três vezes.
@@ -92,8 +93,8 @@ Resumo: O usuário faz o pedido de merenda disponível para si no dia anterior.
 2. Aparece um QRCode na tela gerado pelo banco de dados.
 		3. O aplicativo armazena o QRCode na lista do histórico.
 		Exceções:
-Usuario quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(CSU04).
-
+Usuario quer cancelar o pedido (2). Veja caso “Cancelar pedido da merenda”(CSU04).
+&nbsp;
 
 
 
