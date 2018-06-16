@@ -115,7 +115,34 @@ Usuário quer cancelar o pedido (2). Veja caso “Cancelar pedido da merenda” 
 
 ### 9. Prototipagem de Telas
 
+### 9.1 Autenticação no sistema (CSU01)
+1. O usuário abre o aplicativo
+2. O aplicativo abre sua tela principal com os campos de nome de usuário e senha
+3. O usuário informa os seus dados cadastrados
+
+![ligon.png](login.png)
+
+### 9.2 Erro ao se autenticar (CSU02)
+1. O usuário abre o aplicativo
+2. O aplicativo abre sua tela principal com os campos de nome de usuário e senha
+3. O usuário informa os seus dados cadastrados
+4. O aplicativo retorna um pop-up informando que nao foi possivel se autenticar
+
+### 9.3 Realizar pedido da merenda (CSU03)
+1. O usuário clica em Reserva
+2. O aplicativo abre a tela de reservar a merenda
+3. O usuário clica em Reservar merenda
+
+![menureservar.png](menureservar)
+
+### 9.4 Ver histórico de tickets
+![menuhistorico.png](menuhistorico.png)
+
+### 9.5 Ver cardápio
 ![menucardapio.png](menucardapio.png)
+
+
+
 
 
 
