@@ -71,23 +71,22 @@ Ator primário: Usuário.
 Ator secundário: Base de dados com as contas de usuário cadastradas.
 Resumo: O usuário erra os dados por três vezes.
 Fluxo Principal:
-	1. O usuário abre o sistema.
+1. O usuário abre o sistema.
 2. O aplicativo solicita o nome de usuário e senha para login.
 3. O usuário informa seus dados cadastrados.
 4. O aplicativo verifica a autenticidade dos dados.
-5. O aplicativo faz a busca dos dados informados pelo usuário em seu banco                  de dados.
+5. O aplicativo faz a busca dos dados informados pelo usuário em seu banco de dados.
 6. O aplicativo não localiza os dados informados.
 7. O aplicativo solicita novamente que o usuário digite os dados.
 8. O usuário informa seus dados cadastrados. 
 9. O aplicativo faz outra busca no banco de dados de usuários.
-Exceções:
-Se o usuário errar os dados por três vezes consecutivas, o sistema mostra uma mensagem informando que irá fechar o aplicativo e o aplicativo é encerrado.
-&nbps;	
+Exceções: Se o usuário errar os dados por três vezes consecutivas, o sistema mostra uma mensagem informando que irá fechar o aplicativo e o aplicativo é encerrado.
+&nbps;
 **Realizar pedido da merenda (CSU03)**
 &nbps;
 Ator primário: Usuário.
 Ator secundário: 
-	Pré-condição: O usuário está autenticado no sistema (ver CSU01).
+Pré-condição: O usuário está autenticado no sistema (ver CSU01).
 Resumo: O usuário faz o pedido de merenda disponível para si no dia anterior.
 		1. O usuário seleciona a opção de pedir merenda.
 2. Aparece um QRCode na tela gerado pelo banco de dados.
