@@ -42,6 +42,7 @@
 
 
 |Autenticação do Usuário (RN01)|
+|-----------------------------|---------------------------------------------------|
 |Descrição | O sistema permitirá o aluno a reservar uma merenda no dia X |
 
 
