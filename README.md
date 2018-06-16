@@ -52,50 +52,72 @@
 ### 8. Conjunto de cenários de uso
 
 **Autenticação do aplicativo (CSU01)**
-&nbsp;
-<br>Ator primário: Usuário.<\br>
-<br>Ator secundário: Base de dados com as contas de usuário cadastradas.<\br>
-<br>Resumo: O usuário faz o pedido da merenda no dia vigente.<\br>
-<br>Fluxo Principal:<\br>
+<br>Ator primário: Usuário.</br>
+<br>Ator secundário: Base de dados com as contas de usuário cadastradas.</br>
+<br>Resumo: O usuário faz a autenticação com seus dados cadastrais.</br>
+<br>Fluxo Principal:</br>
 1. O usuário abre o sistema.
 2. O aplicativo abre sua tela principal com os campos de nome de usuário e senha para login.
 3. O usuário informa seus dados cadastrados.
 4. O aplicativo verifica a autenticidade dos dados. 
 5. O aplicativo apresenta a primeira tela de menu ao usuário.
 <br>Exceções:
-Foram informados dados cadastrais incorretos (3). Veja caso “Erro ao logar” (CSU02).<\br>
-&nbsp;
-**Erro ao logar (CSU02)**
-&nbsp;
-<br>Ator primário: Usuário.<\br>
-<br>Ator secundário: Base de dados com as contas de usuário cadastradas.<\br>
-<br>Resumo: O usuário erra os dados por três vezes.<\br>
-<br>Fluxo Principal:<\br>
-1. O usuário abre o sistema.
-2. O aplicativo solicita o nome de usuário e senha para login.
-3. O usuário informa seus dados cadastrados.
-4. O aplicativo verifica a autenticidade dos dados.
-5. O aplicativo faz a busca dos dados informados pelo usuário em seu banco de dados.
-6. O aplicativo não localiza os dados informados.
-7. O aplicativo solicita novamente que o usuário digite os dados.
-8. O usuário informa seus dados cadastrados. 
-9. O aplicativo faz outra busca no banco de dados de usuários.
-<br>Exceções: Se o usuário errar os dados por três vezes consecutivas, o sistema mostra uma mensagem informando que irá fechar o aplicativo e o aplicativo é encerrado.<\br>
+Foram informados dados cadastrais incorretos (3). Veja caso “Erro ao se autenticar” (CSU02).</br>
 &nbps;
-**Realizar pedido da merenda (CSU03)**
-&nbps;
-<br>Ator primário: Usuário.<\br>
-<br>Ator secundário: <\br>
-<br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).<\br>
-<br>Resumo: O usuário faz o pedido de merenda disponível para si no dia anterior.<\br>
-<br>Fluxo principal:<\br>
-1. O usuário seleciona a opção de pedir merenda.
-2. Aparece um QRCode na tela gerado pelo banco de dados.
-3. O aplicativo armazena o QRCode na lista do histórico.
-<br>Exceções:
-Usuario quer cancelar o pedido (2). Veja caso “Cancelar pedido da merenda”(CSU04).<\br>
-&nbsp;
+**Erro ao se autenticar (CSU02)**
+<br>Ator primário: Usuário.</br>
+<br>Ator secundário: Base de dados com as contas de usuário cadastradas.</br>
+<br>Resumo: O usuário erra os dados por três vezes.</br>
+<br>Fluxo Principal:</br>
+1- O usuário abre o sistema.
+2- O aplicativo solicita o nome de usuário e senha para login.
+3- O usuário informa seus dados cadastrados.
+4- O aplicativo verifica a autenticidade dos dados.
+5- O aplicativo mostra uma pop-up dizendo que os dados estão incorretos.
 
+	
+**Realizar pedido da merenda (CSU03)**
+<br>Ator primário: Usuário.</br>
+<br>Ator secundario: Base de dados com os tickets(códigos)</br>
+<br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
+<br>Resumo: O usuário faz o pedido de merenda disponível para si no dia anterior.</br>
+1. O usuário seleciona a opção de pedir merenda.
+2. O aplicativo mostra um QRCode montado pelo ticket(código) na tela gerado pelo banco de dados.
+3. O aplicativo armazena o ticket  na lista do histórico.
+<br>Exceções:
+Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(CSU04).</br>
+
+**Cancelar pedido(CSU04)**
+<br>Ator primário: Usuário</br>
+<br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
+<br>Resumo: O usuário cancela o pedido da merenda.</br>
+1. O usuário seleciona a opção de cancelar o pedido da merenda.
+2. O aplicativo mostra uma pop-up informando que o pedido foi cancelado.
+3. O usuário não poderá desfazer essa operação.
+
+**Mostrar histórico de pedidos(CSU05)**
+<br>Ator primário: Usuário</br>
+<br>Ator secundário: Base de dados com o histórico dos tickets</br>
+<br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
+<br>Resumo: O usuário requisita o histórico para a visualização dos pedidos anteriores.</br>
+	1. O usuário seleciona a opção de visualizar o histórico.
+	2. O aplicativo mostra todo o histórico de pedido.
+
+**Mostrar histórico de pedidos(CSU05)**
+<br>Ator primário: Usuário</br>
+<br>Ator secundário: Base de dados com o histórico dos tickets</br>
+<br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
+<br>Resumo: O usuário requisita o histórico para a visualização dos pedidos anteriores.</br>
+	1.O usuário seleciona a opção de visualizar o histórico.
+	2.O aplicativo mostra todo o histórico de pedido.
+
+**Mostrar cardápio(CSU06)**
+<br>Ator primário: Usuário</br>
+<br>Ator secundário: Base de dados com o cardapio da semana.</br>
+<br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
+<br>Resumo: O usuario requisita visualizar o cardapio da semana.</br>
+1.O usuario seleciona a opção de visualizar o cardapio.
+2.O aplicativo mostra o cardapio da semana.
 
 
 
