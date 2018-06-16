@@ -22,7 +22,7 @@
 
 ### 5. Descrição do ambiente técnico do sistema
 
-<br> O aplicativo será desenvolvido para um sistema Android. Essas informações são transferidas para um banco de dados e a partir de relatórios os dados dos alunos serão tratados de acordo com as intenções do usuário. O tratamento será feito a partir de um sistema implementado na linguagem Java. </br>
+<br> O aplicativo será desenvolvido para um sistema Android. As informações para o aplicativo serão fornecidas de um Banco de dados. O tratamento será feito a partir de um sistema implementado na linguagem Java. </br>
 
 ### 6. Lista de requisitos
 #### 6.1 Funcionais
