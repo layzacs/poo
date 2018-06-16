@@ -51,7 +51,7 @@
 
 ### 8. Conjunto de cenários de uso
 
-**Autenticação do aplicativo (CSU01)**
+#### Autenticação do aplicativo (CSU01)
 <br>Ator primário: Usuário.</br>
 <br>Ator secundário: Base de dados com as contas de usuário cadastradas.</br>
 <br>Resumo: O usuário faz a autenticação com seus dados cadastrais.</br>
@@ -64,7 +64,7 @@
 <br>Exceções:
 Foram informados dados cadastrais incorretos (3). Veja caso “Erro ao se autenticar” (CSU02).</br>
 &nbsp;
-**Erro ao se autenticar (CSU02)**
+#### Erro ao se autenticar (CSU02)
 &nbsp;
 <br>Ator primário: Usuário.</br>
 <br>Ator secundário: Base de dados com as contas de usuário cadastradas.</br>
@@ -76,7 +76,7 @@ Foram informados dados cadastrais incorretos (3). Veja caso “Erro ao se autent
 4- O aplicativo verifica a autenticidade dos dados.
 5- O aplicativo mostra uma pop-up dizendo que os dados estão incorretos.
 &nbsp;
-**Realizar pedido da merenda (CSU03)**
+#### Realizar pedido da merenda (CSU03)
 &nbsp;
 <br>Ator primário: Usuário.</br>
 <br>Ator secundario: Base de dados com os tickets(códigos)</br>
@@ -88,7 +88,7 @@ Foram informados dados cadastrais incorretos (3). Veja caso “Erro ao se autent
 <br>Exceções:
 Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(CSU04).</br>
 &nbsp;
-**Cancelar pedido(CSU04)**
+#### Cancelar pedido(CSU04)
 &nbsp;
 <br>Ator primário: Usuário</br>
 <br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
@@ -99,7 +99,7 @@ Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(C
 
 
 &nbsp;
-**Mostrar histórico de pedidos(CSU05)**
+#### Mostrar histórico de pedidos(CSU05)
 
 
 &nbsp;
@@ -110,7 +110,7 @@ Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(C
 1. O usuário seleciona a opção de visualizar o histórico.
 2. O aplicativo mostra todo o histórico de pedido.
 &nbsp;
-**Mostrar histórico de pedidos(CSU05)**
+#### Mostrar histórico de pedidos(CSU05)
 
 <br>Ator primário: Usuário</br>
 <br>Ator secundário: Base de dados com o histórico dos tickets</br>
@@ -119,7 +119,7 @@ Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(C
 1.O usuário seleciona a opção de visualizar o histórico.
 2.O aplicativo mostra todo o histórico de pedido.
 &nbsp;
-**Mostrar cardápio(CSU06)**
+#### Mostrar cardápio(CSU06)
 &nbsp;
 <br>Ator primário: Usuário</br>
 <br>Ator secundário: Base de dados com o cardapio da semana.</br>
