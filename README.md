@@ -133,10 +133,10 @@ Usuário quer cancelar o pedido (2). Veja caso “Cancelar pedido da merenda” 
 2. O aplicativo abre a tela de reservar a merenda
 3. O usuário clica em Reservar merenda
 
-![menureservar.png](menureservar)
+![menureservar.png](menureservar.png)
 
 #### 9.4 Ver histórico de tickets
-![menuhistorico.png](menuhistorico.png)
+![menuhistórico.png](menuhistórico.png)
 
 #### 9.5 Ver cardápio
 ![menucardapio.png](menucardapio.png)
