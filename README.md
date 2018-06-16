@@ -96,8 +96,12 @@ Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(C
 1. O usuário seleciona a opção de cancelar o pedido da merenda.
 2. O aplicativo mostra uma pop-up informando que o pedido foi cancelado.
 3. O usuário não poderá desfazer essa operação.
+
+
 &nbsp;
 **Mostrar histórico de pedidos(CSU05)**
+
+
 &nbsp;
 <br>Ator primário: Usuário</br>
 <br>Ator secundário: Base de dados com o histórico dos tickets</br>
@@ -107,7 +111,7 @@ Usuário quer cancelar o pedido(2). Veja caso “Cancelar pedido da merenda”(C
 2. O aplicativo mostra todo o histórico de pedido.
 &nbsp;
 **Mostrar histórico de pedidos(CSU05)**
-&nbsp;
+
 <br>Ator primário: Usuário</br>
 <br>Ator secundário: Base de dados com o histórico dos tickets</br>
 <br>Pré-condição: O usuário está autenticado no sistema (ver CSU01).</br>
